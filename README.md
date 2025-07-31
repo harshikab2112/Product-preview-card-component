@@ -40,11 +40,8 @@ Matching the design’s spacing and alignment pixel‑perfectly between mobile a
 ---
 
 ## 📁 Screenshot
-
-<!-- You can add images here like this:
 ![Desktop Preview](./design/desktop-preview.jpg)
-![Mobile Preview](./design/mobile-preview.jpg)
--->
+![Mobile Preview](./design/mobile-design.jpg)
 
 ---
 
