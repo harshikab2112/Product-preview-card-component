@@ -1,0 +1,194 @@
+/* ========== CSS VARIABLES (Colors) ========== */
+:root {
+  --green500: hsl(158, 36%, 37%);
+  --green700: hsl(158, 42%, 18%);
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/* ========== RESET DEFAULT BROWSER STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== BODY STYLING ========== */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Cream);
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ========== MAIN CARD CONTAINER ========== */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  background-color: var(--White);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== IMAGE SECTION ========== */
+.product-image {
+  width: 50%;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ========== CONTENT SECTION ========== */
+.content-container {
+  width: 50%;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* PERFUME TEXT */
+.top-text {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  color: var(--Grey);
+  margin-bottom: 1rem;
+}
+
+/* PRODUCT TITLE */
+.content-container h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--Black);
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+}
+
+/* PRODUCT DESCRIPTION */
+.text-content {
+  font-size: 0.9rem;
+  color: var(--Grey);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+/* ========== PRICE SECTION ========== */
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.price1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--green500);
+  font-family: "Fraunces", serif;
+}
+
+.price2 {
+  font-size: 0.9rem;
+  color: var(--Grey);
+  text-decoration: line-through;
+}
+
+/* ========== ADD TO CART BUTTON ========== */
+.cart-button {
+  background-color: var(--green500);
+  color: var(--White);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-button:hover {
+  background-color: var(--green700);
+}
+
+.cart-button img {
+  width: 15px;
+  height: 15px;
+}
+
+/* ========== ATTRIBUTION STYLING ========== */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ========== MOBILE RESPONSIVENESS ========== */
+@media (max-width: 640px) {
+  .main-container {
+    flex-direction: column;
+    width: 90%;
+    margin: 1rem;
+  }
+
+  .product-image,
+  .product-image img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .content-container {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .content-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .price {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .price1 {
+    font-size: 1.6rem;
+  }
+
+  .cart-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cart-button img {
+    width: 16px;
+    height: 16px;
+  }
+}
